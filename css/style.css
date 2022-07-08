@@ -337,8 +337,9 @@ blanco 255, 255, 255
 .sneakers__filtro{
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
     margin-top: 15px;
-    padding-left: 10px;
+    padding-left: 5px;
     border: solid black 3px;
     height: 70vh;
 }
@@ -504,7 +505,8 @@ blanco 255, 255, 255
     .ayuda{
         display: flex;
         border: solid black 3px;
-        height: 20vh;
+        height: 100%;
+        flex-wrap: wrap;
     }
     
     .ayuda h5{
@@ -529,15 +531,20 @@ blanco 255, 255, 255
     
     }
     
-    .ayuda img{
-        display: none;
-    }
     
     .articulos{
-        display: flex;
         justify-content: center;
-        height: 80vh;
+        height: 100%;
         padding: 0px 40px 0 40px;
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+        "p-1"
+        "p-2"
+        "P-3"
+        "p-4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         
     }
     
@@ -546,14 +553,36 @@ blanco 255, 255, 255
         padding: 20px 0 20px 40px
     }
     
+    .ayuda-p{
+        margin-right: 10px;
+
+    }
+
     .articulos p{
         border: solid black 3px;
         height: 35vh;
         margin-bottom: 10px;
         margin-right: 30px;
         font-size: 13px;   
+        width: 100%;
+    }
+
+    .p-1{
+        grid-area: p-1;
     }
     
+    .p-2{
+        grid-area: p-2;
+    }
+
+    .p-3{
+        grid-area: p-3;
+    }
+
+    .p-4{
+        grid-area: p-4;
+    }
+
     /* nosotros */    
 
     /* noticias */
@@ -655,11 +684,12 @@ blanco 255, 255, 255
     /* sneakers */
     .sneakers__main{
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
-        "sneakers__filtro sneakers__1"
-        "sneakers__filtro sneakers__2";
+        "sneakers__filtro"
+        "sneakers__1"
+        "sneakers__2";
     }
     
     .sneakers__filtro{
@@ -669,19 +699,25 @@ blanco 255, 255, 255
         padding-left: 10px;
         border: solid black 3px;
         grid-area: sneakers__filtro;
-        height: 70%;
+        height: 100%;
+        width: 90vw;
     }
     
     .sneakers__1{
         grid-area: sneakers__1;
+        width: 90vw;
+        height: 25vh;
     }
 
     .sneakers__2{
         grid-area: sneakers__2;
+        width: 90vw;
+        height: 25vh;
     }
     
     .sneakers__img{
-        width: 200px;
+        width: 100%;
+        height: 50%;
     }
     
     .sneakers__1,
@@ -690,15 +726,14 @@ blanco 255, 255, 255
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-
+        height: 75vh;
     }
     
     
     .sneakers__subtitulo{
         font-size: 20px;
         border: solid black 3px;
-        width: 80%;
+        width: 100%;
         margin-bottom: 20px;
     }
     /* sneakers */    
