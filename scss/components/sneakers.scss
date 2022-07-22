@@ -1,0 +1,175 @@
+
+.sneakers__main{
+    display: flex;
+    background-color: red;
+}
+
+.sneakers__filtro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-left: 5px;
+    border: solid black 3px;
+    height: 70vh;
+    background-color: white;
+}
+
+.sneakers__filtro div{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px ;
+    
+}
+
+.sneakers__categoria{
+    font-size: 20px;
+}
+
+.sneakers__1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sneakers__img{
+    width: 30vw;
+}
+
+.sneakers__1,
+.sneakers__2{
+    margin:30px 0 10px 200px
+}
+
+
+.sneakers__subtitulo{
+    font-size: 20px;
+    border: solid black 3px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    .sneakers__main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "sneakers__filtro"
+        "sneakers__1"
+        "sneakers__2";
+    }
+    
+    .sneakers__filtro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        padding-left: 10px;
+        border: solid black 3px;
+        grid-area: sneakers__filtro;
+        height: 100%;
+        width: 90vw;
+    }
+    
+    .sneakers__1{
+        grid-area: sneakers__1;
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .sneakers__1 article{
+        width: 75%;
+        height: 50%;
+    }
+
+    .sneakers__2 article{
+        width: 75%;
+        height: 50%;
+    }
+
+    .sneakers__2{
+        grid-area: sneakers__2;
+        width: 90vw;
+        height: 25vh;
+    }
+    
+    .sneakers__img{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .sneakers__1,
+    .sneakers__2{
+        margin:30px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 75vh;
+    }
+    
+    
+    .sneakers__subtitulo{
+        font-size: 20px;
+        border: solid black 3px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .sneakers__main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "sneakers__filtro"
+        "sneakers__1"
+        "sneakers__2";
+    }
+    
+    .sneakers__filtro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        padding-left: 10px;
+        border: solid black 3px;
+        grid-area: sneakers__filtro;
+        height: 100%;
+        width: 90vw;
+    }
+    
+    .sneakers__1{
+        grid-area: sneakers__1;
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .sneakers__2{
+        grid-area: sneakers__2;
+        width: 90vw;
+        height: 25vh;
+    }
+    
+    .sneakers__img{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .sneakers__1,
+    .sneakers__2{
+        margin:30px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 75vh;
+    }
+    
+    
+    .sneakers__subtitulo{
+        font-size: 20px;
+        border: solid black 3px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

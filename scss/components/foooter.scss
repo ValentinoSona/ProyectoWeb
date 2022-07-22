@@ -1,0 +1,33 @@
+.footer{
+    background-color:$bg-menu;
+}
+
+.m-contactanos{
+    margin: 10px 0 0 50px;
+    z-index: 10;
+}
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    .footer p{
+        font-size: 15px;
+        padding-top: 10px;
+        align-self: flex-start;
+    }
+
+    .m-contactanos{
+        margin: 10px 0px 0px 0px;
+        z-index: 11;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .footer{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .contactanos{
+        padding-right: 15px;
+        margin-right: 15px;
+    }
+}

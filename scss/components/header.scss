@@ -1,0 +1,36 @@
+
+.cabecera__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cabecera__logo{
+    width: 250px;
+    padding: 20px 0 0 10px;
+    transition: all 1s;
+}
+
+.cabecera__logo:hover{
+    transform: scale(1.5);
+}
+
+.header-item:hover{
+    transform: scale(1.2);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:480px){
+      
+    .cabecera__logo{
+        width: 300px;
+    }
+
+    .cabecera__lista__item{
+        font-size: 10px;
+        align-self: center;
+        padding: 5px;
+        margin-left: 10px;
+    }
+}

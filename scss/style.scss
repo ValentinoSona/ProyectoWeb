@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    z-index: 10;
+}
+@import "base/variables";
+@import "components/header.scss";
+@import "components/index.scss";
+@import "components/sneakers.scss";
+@import "components/noticias.scss";
+@import "components/nosotros.scss";
+@import "components/ayuda.scss";
+@import "components/foooter.scss";
+
+
